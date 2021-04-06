@@ -1,0 +1,370 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: max-content;
+  width: fit-content;
+  margin: 70px 0 40px 0;
+  font-size: 26px;
+}
+
+.head-text{
+  margin: 25px 0 10px 0;
+  font-size: 18px;
+} 
+
+.search-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70px;
+  width: 100%;
+}
+
+.search-bar{
+  outline: none;
+  background-color: white;
+  border: none;
+  box-shadow: inset 0px 0px 2px 0px rgb(49 49 49);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  height: 35px;
+  width: 500px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.search-btn{
+  height: 35px;
+  width: 100px;
+  outline: none;
+  border: none;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.result-text{
+  display: block;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+
+}
+
+.food-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 1275px;
+  margin: 70px 0 70px 0;
+  background: linear-gradient(to right, #76b852, #8dc26f);
+  box-shadow: inset 0px 0px 3px 0px rgb(49 49 49);
+}
+
+.food-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: max-content;
+  width: 900px;
+  margin: 60px 0 40px 0;
+  padding:0 0 0 0;
+  border-radius: 35px;
+  box-shadow: inset 0px 0px 6px 0px rgb(0 0 0);
+  background-color: white;
+}
+
+.food-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 900px;
+  margin: 40px 0 25px 0;
+  padding: 0 50px;
+}
+
+.food-head h3{
+  font-size: 24px;
+}
+
+.food-item img{
+  height: 140px;
+  border-radius: 75px;
+  margin: 0 30px 0 0;
+}
+
+.ingredients-head{
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.list-elements{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  height: fit-content;
+  width: 700px;
+  margin: 0 0 20px 0;
+}
+
+.list-elements ul div{
+  margin: 10px 10px;
+}
+
+.list-elements p{
+  margin-top: 25px;
+}
+
+.url-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  margin:0 0 40px 0;
+}
+
+.url-block a{
+  text-decoration: underline;
+  color: black;
+  margin-left: 5px;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-top:10px ;
+  height: 30px;
+  width: 100%;
+  box-shadow: 0px -1px 2px -1px #585858;
+}
+
+@media all and (max-width:1000px){
+
+  .App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+ 
+  .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin: 30px auto;
+    font-size: 14px;
+  }
+
+  .head h1{
+    margin: 15px auto;
+  }
+
+  .head img{
+    height: 35px;
+  }
+  
+  .head-text{
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+  } 
+  
+  .search-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .search-bar{
+    outline: none;
+    background-color: white;
+    border: none;
+    box-shadow: inset 0px 0px 2px 0px rgb(49 49 49);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    height: 25px;
+    width: 70%;
+    margin: auto 0;
+    padding: 0 10px;
+  }
+  
+  .search-btn{
+    height: 25px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  }
+  
+  .result-text{
+    display: block;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+  
+  }
+  
+
+  .food-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    margin: 20px auto;
+    background: linear-gradient(to right, #76b852, #8dc26f);
+    box-shadow: inset 0px 0px 3px 0px rgb(49 49 49);
+  }
+  
+  .food-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+    width: 90%;
+    margin: 20px 0 20px 0;
+    padding:0 0 0 0;
+    border-radius: 35px;
+    box-shadow: inset 0px 0px 6px 0px rgb(0 0 0);
+    background-color: white;
+  }
+  
+  .food-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    margin: 40px 0 25px 0;
+    padding: 0 50px;
+  }
+  
+  .food-head h3{
+    font-size: 18px;
+  }
+  
+  .food-item img{
+    height: 80px;
+    border-radius: 75px;
+    margin: 0 10px 0 0;
+  }
+  
+  .ingredients-head{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .food-li{
+  font-size: 12px;
+  text-align: center;
+  list-style: none;
+  display: block;
+  /* overflow: hidden; */
+  /* width: 80%; */
+  }
+  
+  .list-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    height: fit-content;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  
+  .list-elements ul div{
+    margin: 10px 10px;
+  }
+  
+  .list-elements p{
+    margin-top: 25px;
+  }
+  
+  .url-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin:0 0 40px 0;
+    font-size: 14px;
+  }
+  
+  .url-block a{
+    text-decoration: underline;
+    color: black;
+    margin-left: 5px;
+  }
+  
+  .footer{
+    display: block;
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding-top:10px ;
+    height: 10px;
+    width: 100%;
+    font-size: 12px;
+    box-shadow: 0px -1px 2px -1px #585858;
+  }
+
+
+}
